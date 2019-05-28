@@ -8,7 +8,7 @@
 
     <h2 class="blog-post-title">Create new movie</h2>
 
-    <form method="POST" >
+    <form method="POST" action="{{ route('store')}}">
         @csrf
 
         <div class="form-group">
@@ -17,7 +17,7 @@
                    class="form-control"
                    id="title"
                    name="title">
-            
+                   @include('partials.error-message', ['fieldTitle'=>'title'])
         </div>
 
         <div class="form-group">
@@ -26,7 +26,7 @@
                    class="form-control"
                    id="genre"
                    name="genre">
-           
+                   @include('partials.error-message', ['fieldTitle'=>'genre'])
         </div>
 
         <div class="form-group">
@@ -43,16 +43,16 @@
                        class="form-control"
                        id="year"
                        name="year">
-               
-        </div>
+                       @include('partials.error-message', ['fieldTitle'=>'year'])
 
         <div class="form-group">
-                <label for="StoryLine">Story Line</label>
-                <textarea name="StoryLine"
-                          id="StoryLine" 
+                <label for="storyline">Story Line</label>
+                <textarea name="storyline"
+                          id="storyline" 
                           cols="70" 
-                          rows="4">
+                          rows="4">                        
                 </textarea>
+                @include('partials.error-message', ['fieldTitle'=>'storyline'])
         </div>
 
         <div class="form-group">

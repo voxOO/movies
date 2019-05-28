@@ -25,4 +25,13 @@ class MoviesController extends Controller
 
         return view ('/movies/create');
     }
+
+    public function store () {
+
+        $this->validate(request(), Movie::STORE_RULES);
+
+        $movie = Movie::create(request()->all());
+
+        return redirect()->route('store');
+    }
 }
