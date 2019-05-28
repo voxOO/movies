@@ -3,6 +3,6 @@
         <a href="">Movie</a>
     </p>
     <p>
-        <a href="">Add Movie</a>
+        <a href="/movies/create/">Add Movie</a>
     </p>
 </nav>
