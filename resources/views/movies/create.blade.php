@@ -49,7 +49,7 @@
                 <label for="storyline">Story Line</label>
                 <textarea name="storyline"
                           id="storyline" 
-                          cols="70" 
+                          cols="96" 
                           rows="4">                        
                 </textarea>
                 @include('partials.error-message', ['fieldTitle'=>'storyline'])

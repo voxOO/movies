@@ -18,7 +18,7 @@ class Movie extends Model
         'title' => 'required',
         'genre' => 'required',
         
-        'year' => 'required| min:1900| max:2019',
+        'year' => 'required| numeric|min:1900|max:2019',
         'storyline' => 'required|max:1000'
     ];
 }
