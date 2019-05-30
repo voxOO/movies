@@ -1,5 +1,24 @@
-nav p {
-  
-    margin: auto auto;
-    color:navyblue;
+
+
+nav {
+    background-color: aqua;
+    margin:4px;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 140%;
+    padding: 4px;
+    margin: 6px;
+   
 }

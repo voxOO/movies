@@ -27,7 +27,7 @@ Route::get('/movies/{id}' , ['as' => 'single-movie', 'uses' => 'MoviesController
 
 Route::get('/movies/genre/{genre}', 'GenresController@show');
 
-//Route::get('/genres/{genres}', ['as' => 'all-genres', 'uses' => 'GenresController@show']);
+
 
 
 

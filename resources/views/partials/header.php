@@ -1,8 +1,12 @@
+<div class="navigation">
 <nav>
-    <p>
-        <a href="/movies">Movies</a>
-    </p>
-    <p>
-        <a href="/movies/create/">Add Movie</a>
-    </p>
+    <ul>
+        <li>
+            <a href="/movies">MOVIES</a>
+        </li>
+        <li>
+            <a href="/movies/create/">ADD MOVIE</a>
+        </li>
+    </ul>
 </nav>
+</div>

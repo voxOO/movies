@@ -44,12 +44,13 @@
                        id="year"
                        name="year">
                        @include('partials.error-message', ['fieldTitle'=>'year'])
+        </div>
 
         <div class="form-group">
                 <label for="storyline">Story Line</label>
                 <textarea name="storyline"
                           id="storyline" 
-                          cols="96" 
+                          cols="97%" 
                           rows="4">                        
                 </textarea>
                 @include('partials.error-message', ['fieldTitle'=>'storyline'])
