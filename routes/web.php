@@ -25,7 +25,9 @@ Route::post( '/movies/{movieid}/comments', ['as'=>'store_comment' , 'uses'=>'Com
 
 Route::get('/movies/{id}' , ['as' => 'single-movie', 'uses' => 'MoviesController@show']);
 
+Route::get('/movies/genre/{genre}', 'GenresController@show');
 
+//Route::get('/genres/{genres}', ['as' => 'all-genres', 'uses' => 'GenresController@show']);
 
 
 

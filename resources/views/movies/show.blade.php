@@ -5,7 +5,8 @@
 @section('content')
 
    <h2>{{$movie->title}}</h2>
-   <p>{{$movie->genre}}</p>
+   <a href="{{ '/movies/genre/' . $movie->genre }}"><p>{{$movie->genre}}</p></a>
+   <!-- <p>{{$movie->genre}}</p> -->
    <p>{{$movie->director}}</p>
    <p>{{$movie->year}}</p>
    <p>{{$movie->storyline}}</p>
@@ -37,7 +38,7 @@
             @include('partials.error-message', ['fieldTitle'=>'content'])
         </div>
 
-            <input type="hidden" name="movie_id" value="$comment->movie_id">
+            <input type="hidden" name="movie_id" value="movie_id">
 
 
         <div class="form-control">
