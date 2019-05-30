@@ -37,7 +37,7 @@
             @include('partials.error-message', ['fieldTitle'=>'content'])
         </div>
 
-            <input type="hidden" name="movie_id" value="movie_id">
+            <input type="hidden" name="movie_id" value="$comment->movie_id">
 
 
         <div class="form-control">
