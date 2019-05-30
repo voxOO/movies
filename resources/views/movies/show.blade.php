@@ -26,4 +26,23 @@
             </ul>
    @endif
 
+   <h4> Post a comment </h4>
+
+<form method="POST" action="{{ route('store_comment', ['movie_id' => $movie->id])}}">
+        @csrf
+
+        <div class="form-group">
+            <label for="content">Content</label>
+            <input type="text" id="content" name="content" />
+            @include('partials.error-message', ['fieldTitle'=>'content'])
+        </div>
+
+            <input type="hidden" name="movie_id" value="movie_id">
+
+
+        <div class="form-control">
+            <button type="submit" class="btn btn-primary"> Submit </button>
+        </div>
+</form>
+
 @endsection
